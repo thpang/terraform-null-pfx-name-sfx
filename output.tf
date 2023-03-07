@@ -4,5 +4,5 @@
 #
 output "name" {
   description = "String including the name and optional prefix and suffix values provided"
-  value = local.name
+  value       = local.name
 }
