@@ -3,5 +3,5 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 output "name" {
-  value = local.entity_name
+  value = local.name
 }
