@@ -4,7 +4,6 @@
 #
 variable "name" {
   description = "Name for the entity name being generated - Required"
-  default     = null
 
   validation {
     condition     = var.name != null ? length(var.name) > 0 ? true : false : false
