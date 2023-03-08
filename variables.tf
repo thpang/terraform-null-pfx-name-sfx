@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 variable "name" {
-  description = "Name for the entity name being generated - Required"
+  description = "Name for the entity name being generated"
 
   validation {
     condition     = var.name != null ? length(var.name) > 0 ? true : false : false
@@ -12,11 +12,11 @@ variable "name" {
 }
 
 variable "prefix" {
-  description = "Prefix string to be added to the name - Optional"
+  description = "Prefix string to be added to the name"
   default     = null
 }
 
 variable "suffix" {
-  description = "Suffix string to be added to the name - Optional"
+  description = "Suffix string to be added to the name"
   default     = null
 }
